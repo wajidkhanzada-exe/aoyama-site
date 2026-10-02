@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import ProductsGrid from '@/components/ProductsGrid';
 import Footer from '@/components/Footer';
 import LegacyScripts from '@/components/LegacyScripts';
+import InsideRide from '@/components/InsideRide';
 import { H } from '@/lib/legacy';
 
 const L = ({ k }) => <div dangerouslySetInnerHTML={{ __html: H[k] }} />;
@@ -16,7 +17,7 @@ export default function Home() {
         <L k="about" />
         <ProductsGrid />
         <L k="services" />
-        <L k="how" />
+        <InsideRide />
         <L k="planner" />
         <L k="safety" />
         <L k="faq" />
